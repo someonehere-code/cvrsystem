@@ -78,11 +78,4 @@ local distanceToRecord = 50
 local MyCVR = CVRSystem.CreateNewCVR(math.random(1, 10000), script.Parent, distanceToRecord)
 
 MyCVR.StartRecording()
-
--- Handle player interactions
-game.Players.PlayerAdded:Connect(function(player)
-    player.Chatted:Connect(function(message)
-        checkAndSendMessage(player, message)
-    end)
-end)
 ```
